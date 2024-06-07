@@ -1,0 +1,316 @@
+body{
+    height: auto;
+}
+
+/*começo da configuração da navbar modo escuro/padrao*/
+/*configuração navbar*/
+.navbar{
+    background: linear-gradient(#000a0a6b 25%, #000a0a34 );
+    color: transparent;
+}
+
+.navbar-brand{
+    width: 70px;
+    margin-right: 0;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.navbar-nav{
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #d9d9d9;
+    font-size: 1.2em;
+    padding: .5em 2em;
+    justify-content: center;
+    font-family: dosis;
+}
+
+/*icone de lupa na tela media/pequena*/
+.lupa{
+    color: #d9d9d9;
+    font-size: 25px;
+    border: none;
+}
+
+.dropdown-menu{
+    background: transparent;
+    border: none;
+}
+
+
+/*botao modo escuro/modo claro*/
+.trilho{
+    width: 45px;
+    height: 20px;
+    background-color: #d9d9d9;
+    border-radius: 150px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 20px;
+    height: 20px;
+    background-color: #000a0a;
+    border-radius: 50px;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #000a0a;
+}
+
+.trilho.dark .indicador{
+    left: 25px;
+    background-color: #d9d9d9;
+}
+
+/*icone lua e sol*/
+.colori{
+    color: #d9d9d9;
+    margin: 4px;
+}
+
+/*caixinha de pesquisa*/
+.form-control{
+    width: 250px;
+    height: 36px;
+    background: #111b1b;
+    border: none;
+    border-radius: 50px;
+}
+
+.form-control i{
+    flex: 1;
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 23px;
+}
+
+.form-control input{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d9d9d9;
+    align-items: center;
+}
+
+/*botao da caixinha de pesquisa*/
+.btn-nav{
+    background: #111b1b;
+    border: none;
+    position: absolute;
+}
+
+.btn-nav:hover i{
+    color: #000a0a;
+    border-radius: 49px;
+}
+
+/*configuração da logo*/
+#logo{
+    font-size: 2em;
+    font-family: Ethnocentric;
+    background: linear-gradient(to top, rgb(233, 0, 118) 37%, rgb(0, 232, 0) 63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 200px;
+    align-self: center;
+    text-align: center;
+}
+
+/*botão login*/
+.btn-login{
+    color: #000a0a;
+    background: rgb(0, 232, 0);
+    font-family: dosis;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    height: 36px;
+    width: 100px;
+}
+
+.btn-login:hover{
+    background: rgb(0, 69, 0);
+    color: #d9d9d9;
+    border: none;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+.container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    width: 90%;
+    min-width: 90%;
+    margin-bottom: 5%;
+    height: 100%;
+}
+
+/*Seção de CriarPost*/
+.criarPost{
+    font-family: Dosis;
+}
+
+/*Botão de criar post*/
+.criarPost .btn{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    top: 0;
+    right: 0;
+    width: 150px;
+    border-radius: 60px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.20);
+    color:#000a0a;
+    background-color:rgb(0, 232, 0);
+}
+
+.criarPost .btn:hover{
+    color:rgb(217, 217, 217);
+    background-color: rgb(0, 69, 0);
+}
+
+/*Área onde ficara o collapse do criar posts*/
+.post{
+    position: absolute;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 130px;
+}
+
+.card{
+    font-family: Dosis;
+    background-color: #000a0a;
+}
+
+/*Input do título do post*/
+.post input{
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color:rgb(217, 217, 217);
+    background-color: #111b1b;
+}
+
+.post input::placeholder{
+    font-size: 24px;
+    color:rgb(217, 217, 217);
+}
+
+/*Container da descrição do post*/
+.textarea-container {
+    position: relative;
+    width: 100%;
+}
+
+/*Descrição do post*/
+.post textarea{
+    font-size: 24px;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 40px;
+    resize: none;
+    color:rgb(217, 217, 217);
+    background-color: #111b1b;
+}
+
+.post textarea::placeholder{
+    font-size: 24px;
+    color:rgb(217, 217, 217);
+}
+
+/*Configuração durante edição das infos ao criar post*/
+.form-control:focus {
+    font-size: 24px;
+    color:rgb(217, 217, 217);
+    background-color: #111b1b;
+}
+
+/*Área onde ficará o span dos caracteres*/
+.textarea-container .spanCaracter{
+    position: absolute;
+    bottom: 30px;
+    margin-left: 0.75%;
+    width: 98%;
+    height: 20%;
+}
+
+/*Span dos caracteres*/
+.spanCaracter .caracters{
+    position: absolute;
+    right: 0;
+    color:rgb(217, 217, 217);
+}
+
+/*Footer da descrição*/
+.textarea-container .textarea-footer {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.75%;
+    width: 98%;
+    height: 20%;
+    background-color: #111b1b; /* Cor do fundo do footer */
+    align-content: center;
+    text-align: left;
+    padding: 5px 0;
+    border-top: 1px solid rgba(217, 217, 217, 0.06); /* Borda superior do footer */
+}
+
+/*Label do upload de arquivo*/
+.file-input-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*Upload de arquivo*/
+.file-input-wrapper input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Icone do upload de arquivo*/
+.file-input-wrapper .icon {
+    font-size: 35px;
+    margin-left: 30%;
+    background-color:rgba(47, 55, 55, 0.48); /* Ajuste o tamanho do ícone conforme necessário */
+    color: rgb(217, 217, 217); /* Cor do ícone */
+}
+
+/*Botão Publicar*/
+.textarea-footer .publicar{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    top: 10px;
+    right: 0;
+    width: 130px;
+    border-radius: 10px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.20);
+    color:#000a0a;
+    background-color:rgb(0, 232, 0);
+}
